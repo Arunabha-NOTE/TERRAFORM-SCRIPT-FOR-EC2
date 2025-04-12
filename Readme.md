@@ -20,6 +20,8 @@ This project contains Terraform scripts to deploy an EC2 instance on AWS.
 
 **Important:** Never commit your `terraform.tfvars` file to version control. It contains sensitive credentials.
 
+**Note:** If you change the AWS region, you must also update the AMI ID in the EC2 resource as AMI IDs are region-specific. You can find the appropriate AMI ID for your region using the [AWS EC2 AMI finder tool](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/finding-an-ami.html#finding-quick-start-ami).
+
 ## Terraform Commands
 
 ### Initialize
